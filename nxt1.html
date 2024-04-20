@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<canvas id="nikita" width="200" height="100" style="border:3px solid red;">
+	
+</canvas>
+<script type="text/javascript">
+var c=document.getElementById("nikita");
+var cd=c.getContext("2d")/*the 2d me  ans getting o/p 2 dimensionally*/
+cd.moveTo(200,0);
+cd.lineTo(0,100);
+cd.stroke();           
+var d=document.getElementById("nikita");
+var dd=c.getContext("2d")/*the 2d means getting o/p 2 dimensionally*/
+dd.beginPath();
+dd.arc(100,70,40,0,2*Math.PI);/*(x-axis,y-axis,rad,formula)*/
+cd.stroke();
+var e=document.getElementById("nikita");
+var ee=c.getContext("2d")/*the 2d means getting o/p 2 dimensionally*/
+ee.font="30px arial"
+ee.fillText("hello",10,50)/* for stroke text we replace filltext-stroketext*/
+
+cd.lineTo(0,100);
+cd.stroke();
+
+</script>
+<svg width="100" height="100"> 
+  <circle cx="50" cy="50" r="40" 
+  stroke="green" stroke-width="4" fill="yellow" /> 
+</svg>
+</body>
+</html>
