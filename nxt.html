@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		h1{/*tag-selector*/
+			color:red;
+			background-color: lightyellow;
+		}
+		.bn{ /*class selector*/
+			color:skyblue;
+			background-color: whitesmoke;
+		}
+		#hai{ /*id selector*/
+			color:black;
+			background-color: whitesmoke;
+		}
+		#holla{
+			color: black;
+			background-color: floralwhite;
+		}
+		/*group selector--> selects a group for same work*/ h1,.bn,#hai,#holla{
+			border-width: 5px;
+			border-style:solid ;
+			border-color: sandybrown;
+			margin: 10px 20px 10px 20px;
+			padding-top: 10px 20px 10px 20px;
+
+		}
+		input[type="text"]{/* tag with attribute selector*/
+			border:3px dotted blue;
+		}
+		input[type="password"]{ /*tag with attribute selector*/
+			border:3px solid greenyellow;
+		}
+	/*descendent combinator*/	div p{
+			color:black;
+			background-color: yellow;
+		}
+		/*child combinator*/
+		div>p{
+			color:red;
+			background-color: ghostwhite;
+		}
+		div+p{/*adjacent sibling selector*/
+			color:rosybrown;
+			background-color: ghostwhite;
+		}
+		div~p{ /*general sibling selector*/
+			color:darkblue;
+			background-color: ghostwhite;
+		}
+		ul>li{
+			color:rosybrown;
+			background-color: lightyellow;
+		}
+		ul li{
+			color: black;
+			background-color: navajowhite;
+		}
+
+	</style>
+</head>
+<body>
+<h1> 	SELECTOR'S CONCEPT: tag selector's concept</h1>
+<h1 class="bn"> tag selector's concept</h1>	
+<h1 id="hai"> tag selector's concept</h1> /* here id is unique i.e primary key cant give same id to 2 diff tags*/
+<h1> tag selector's concept</h1>	
+<h1 class="bn"> tag selector's concept</h1>		
+<p class="bn">What bacteria is amoeba?
+Amoeba | Protista, Unicellular & Flagellates | Britannica
+amoeba, also spelled ameba, plural amoebas or amoebae, any of the microscopic unicellular protozoans of the rhizopodan order Amoebida. The well-known type species, Amoeba proteus, is found on decaying bottom vegetation of freshwater streams and ponds.15-Sept-2023 </p>
+<p id="holla"> hi this is arnika!!</p>
+<form>
+	<input type="text" name="nme">
+	<input type="password" name=" pwd">
+</form>
+/* COMBINATORS*/
+<div>
+	<p> para no 1</p>
+	<p> para no 2</p>
+	<section>
+		<p>para no 3</p>
+	</section>
+	<p> para no 4</p>
+</div>
+/* descendent combinator only prints the paras under div*/
+<p> last para</p>
+<p> last para!!</p>
+<ul>
+	<li>
+		no-1
+	</li>
+	<li> no-2</li>
+	<li> no-3</li>
+</ul>
+</body>
+</html>
