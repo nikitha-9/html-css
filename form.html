@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0; 
+			padding:0;
+		}
+		.form{
+			width:300px;
+			background-color:#CFDEFC;
+			margin:0 auto;
+			padding:20px 30px;
+		}
+		input[type="text"]{
+			border: 2px solid green ;
+			border-radius: 5px;
+			background-image: url(./images/user.jpg);
+			background-size:10px;
+			background-repeat: no-repeat;/*if repeat-x then its repeats over x-axis*/
+			background-position: 5px 2px;/*x and y axis*/
+			padding-left: 15px;/* makes to enter text after user symbol*/
+			/*background:transparent; used for transparent background i.e forms background color*/
+
+
+		}
+		input[type="password"]{
+			border: 2px dotted green;
+			border-radius: 5px;
+		}
+		input[type="submit"]{
+			border:1px blue solid;
+			color: white;
+			background-color:lightpink;
+			padding:3px 8px ;
+			cursor:pointer;/*for hand like cursor*/
+			border-radius: 8px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="form">
+      <form action="db.py" method="post">
+      	<label> enter your name</label>
+      	<input type="text" name="">
+      	<br>
+      	<br>
+        <label> enter your pwd</label>
+        <input type="password" name="">
+        <br>
+        <br>
+        <label> ENTER YOUR EMAIL:- <sup>*</sup></label>
+	<input type="email" name="myemail" placeholder="enter ur email here" required>
+	<br>
+	<br>
+	<label> enter your age:</label>
+	<input type="number" name="num"  value="10" min="1" max="18">
+	<br>
+	<br>
+        <input type="submit" name="signup">   
+
+      </form>
+  </div><!----myform----->
+  
+
+
+</body>
+</html>
