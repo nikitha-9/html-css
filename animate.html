@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>/*-----imp topic--*/
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#animation{
+			width:300px;
+			height:200px;
+			background-color:royalblue;
+			margin-left: 30px;
+			transition-property:all;
+			transition-duration: 5s;
+			transition-delay: 1s;
+			transition-timing-function: ease;
+
+		}
+		#animation:hover{
+			transform: rotate(45deg);/*if -45deg is given it moves in rev dirctn*/
+			background-color: violet;
+			transform:skew(20deg); /* converts the square to parellelogrm*/
+			transform: translate(200px,300px);/* 200,300 are distances from x-axis & y-axis*/
+			transform:scale(2) ;/* it doubles  or multiplies the given input no the width of div bar*/
+
+		}
+		.nikks{
+			width:200px;
+			height: 100px;
+			background-color: green;
+			animation-name: myanimation;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			animation-delay:2s ;
+			animation-iteration-count: 3;
+			/*animation-play-state: paused;*/
+			/* as the animation now is un-directional by keyframes concept it becomes directional*/
+			position:absolute;/* without this animation is not applied*/
+			animation-direction: alternate;
+
+
+		}
+		@keyframes myanimation{ /*animation's name*/
+			0%{
+				top:0;
+				left:0;
+
+			}
+			25%{
+				top:0;
+				left:500px;
+				background-color: black;/* to know abt the coordinates we made i.e what is 25% and all...*/
+
+			}
+			50%{
+				top:500px;
+				left:500px;
+				background-color: lightyellow;
+
+
+			}
+			75%{
+				top:500px;
+				left:0;
+				background-color: brown;
+
+			}
+			100%{
+				top:0;
+				left:0;
+
+			}
+
+
+		}
+	</style>
+</head>
+<body>
+<div id="animation">
+	
+</div>
+<br>
+<div class="nikks">
+	holla!
+	
+</div>
+
+</body>
+</html>
